@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6153393747489546714
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8eea678bc4ae5439ea41d618c8824711, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.647
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eea678bc4ae5439ea41d618c8824711, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.929
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eea678bc4ae5439ea41d618c8824711, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.017
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eea678bc4ae5439ea41d618c8824711, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eea678bc4ae5439ea41d618c8824711, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eea678bc4ae5439ea41d618c8824711, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eea678bc4ae5439ea41d618c8824711, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eea678bc4ae5439ea41d618c8824711, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eea678bc4ae5439ea41d618c8824711, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8eea678bc4ae5439ea41d618c8824711, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8eea678bc4ae5439ea41d618c8824711, type: 3}
+      propertyPath: m_Name
+      value: burger-cheese-double
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8eea678bc4ae5439ea41d618c8824711, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7549223616058985684}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8eea678bc4ae5439ea41d618c8824711, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6612874582918703265}
+  m_SourcePrefab: {fileID: 100100000, guid: 8eea678bc4ae5439ea41d618c8824711, type: 3}
+--- !u!1 &6459383229898316939 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8eea678bc4ae5439ea41d618c8824711, type: 3}
+  m_PrefabInstance: {fileID: 6153393747489546714}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7549223616058985684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6459383229898316939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596980b1f548488cac0f0920acf4c997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthPickup
+  pickupName: Pickup
+  respawnTime: 30
+  destroyOnPickup: 1
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  rotationSpeed: 50
+  bobSpeed: 2
+  bobHeight: 0.5
+  enableRotation: 1
+  enableBobbing: 1
+  pickupEffect: {fileID: 0}
+  pickupSound: {fileID: 0}
+  effectDuration: 1
+  showPickupText: 1
+  textDisplayTime: 2
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  healAmount: 25
+  healPercentage: 0
+  fullHeal: 0
+  glowMaterial: {fileID: 0}
+  glowIntensity: 2
+  glowCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  healthColor: {r: 0, g: 1, b: 0, a: 1}
+  healingParticles: {fileID: 0}
+  particleDuration: 2
+--- !u!65 &6612874582918703265
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6459383229898316939}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: 0, y: 0.2, z: 0}
